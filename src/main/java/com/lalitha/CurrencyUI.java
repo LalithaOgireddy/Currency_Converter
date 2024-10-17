@@ -38,20 +38,26 @@ public class CurrencyUI {
             case 2:
                 System.out.println("Enter amount in USD");
                 inputAmt = getInputAmount();
-                outputAmt = ConversionOperation.convertUsdToSek(inputAmt);
-                formatOutput(inputAmt,outputAmt,"USD","SEK");
+                if(ConversionOperation.validateInput(inputAmt)) {
+                    outputAmt = ConversionOperation.convertUsdToSek(inputAmt);
+                    formatOutput(inputAmt, outputAmt, "USD", "SEK");
+                }
                 break;
             case 3:
                 System.out.println("Enter amount in SEK");
                 inputAmt = getInputAmount();
-                outputAmt = ConversionOperation.convertSekToEur(inputAmt);
-                formatOutput(inputAmt,outputAmt,"SEK","EUR");
+                if(ConversionOperation.validateInput(inputAmt)) {
+                    outputAmt = ConversionOperation.convertSekToEur(inputAmt);
+                    formatOutput(inputAmt, outputAmt, "SEK", "EUR");
+                }
                 break;
             case 4:
                 System.out.println("Enter amount in Euro");
                 inputAmt = getInputAmount();
-                outputAmt = ConversionOperation.convertEurToSek(inputAmt);
-                formatOutput(inputAmt,outputAmt,"EUR","SEK");
+                if(ConversionOperation.validateInput(inputAmt)) {
+                    outputAmt = ConversionOperation.convertEurToSek(inputAmt);
+                    formatOutput(inputAmt, outputAmt, "EUR", "SEK");
+                }
                 break;
             case 0:
                 break;
