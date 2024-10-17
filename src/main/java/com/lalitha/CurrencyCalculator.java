@@ -56,7 +56,7 @@ public class CurrencyCalculator {
 
     public double getInputAmount() {
         try {
-            double inputAmt = input.nextDouble();
+            inputAmt = input.nextDouble();
         } catch(Exception e) {
             System.out.println("Enter valid Amount");
         }
