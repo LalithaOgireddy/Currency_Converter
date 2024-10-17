@@ -1,10 +1,8 @@
 package com.lalitha;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        CurrencyCalculator currencyCalculator = new CurrencyCalculator();
-        currencyCalculator.displayMenu();
+        CurrencyUI currencyUI = new CurrencyUI();
+        currencyUI.displayMenu();
     }
 }
